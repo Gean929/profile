@@ -1,1 +1,117 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página Inicial - Perfil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #fff;
+      color: #000;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 500px;
+      width: 90%;
+      border: 4px solid #6a0dad; /* Borda roxo escuro */
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1, p, .links {
+      opacity: 0;
+      animation: fadeText 1s ease forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation-delay: 0.5s;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      animation-delay: 1s;
+    }
+
+    .links {
+      animation-delay: 1.5s;
+    }
+
+    .email {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px 10px 0 10px;
+      background-color: #6a0dad;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #4b0c87;
+    }
+
+    @keyframes fadeText {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gean Farley</h1>
+    <p class="email">Email: geanfarley180@email.com</p>
+    <p>Desenvolvedor Web | UI/UX Designer</p>
+
+    <div class="links">
+      <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+      <a href="https://seusite.com" target="_blank">Portfólio</a>
+    </div>
+  </div>
+</body>
+</html>
