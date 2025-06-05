@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Página Inicial - Perfil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,33 +13,34 @@
     }
 
     body {
-      background-color: #000;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1b1f3a, #0f0c29);
+      font-family: 'Inter', sans-serif;
       color: #fff;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      padding: 20px;
     }
 
     .container {
-      background-color: #fff;
-      color: #000;
+      background-color: #ffffff10;
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
       padding: 40px;
-      border-radius: 16px;
       max-width: 500px;
-      width: 90%;
-      border: 4px solid #6a0dad; /* Borda roxo escuro */
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-      animation: fadeIn 1.5s ease forwards;
+      width: 100%;
+      text-align: center;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.2s ease-out forwards;
       opacity: 0;
     }
 
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
       }
       to {
         opacity: 1;
@@ -47,70 +48,76 @@
       }
     }
 
-    h1, p, .links {
-      opacity: 0;
-      animation: fadeText 1s ease forwards;
-    }
-
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      animation-delay: 0.5s;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
     }
 
     p {
       font-size: 1.1rem;
-      margin-bottom: 5px;
-      animation-delay: 1s;
-    }
-
-    .links {
-      animation-delay: 1.5s;
+      margin-bottom: 10px;
+      opacity: 0.9;
     }
 
     .email {
-      color: #333;
+      font-size: 1rem;
+      color: #ccc;
       margin-bottom: 20px;
     }
 
+    .links {
+      margin-top: 20px;
+    }
+
     .links a {
-      display: inline-block;
-      margin: 10px 10px 0 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px;
       background-color: #6a0dad;
       color: #fff;
-      padding: 10px 20px;
-      border-radius: 25px;
+      padding: 12px 20px;
+      border-radius: 30px;
       text-decoration: none;
-      font-size: 1rem;
-      transition: background 0.3s ease;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.3s ease, transform 0.2s;
     }
 
     .links a:hover {
-      background-color: #4b0c87;
+      background-color: #571e9c;
+      transform: translateY(-2px);
     }
 
-    @keyframes fadeText {
-      to {
-        opacity: 1;
-        transform: none;
-      }
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
+    .links a svg {
+      width: 18px;
+      height: 18px;
+      fill: #fff;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Gean Farley</h1>
-    <p class="email">Email: geanfarley180@email.com</p>
-    <p>Desenvolvedor Web | UI/UX Designer</p>
+    <h1>Bem-vindo ao meu site!</h1>
+    <p>Meu nome é <strong>Gean Farley</strong>, sou estudante técnico de informática.</p>
+    <p class="email">📧 geanfarley180@email.com</p>
+    <p>💻 Desenvolvedor Web | 🎨 UI/UX Designer</p>
 
     <div class="links">
-      <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
-      <a href="https://seusite.com" target="_blank">Portfólio</a>
+      <a href="https://github.com/seuusuario" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.5 7.9 11c.6.1.8-.3.8-.6V20c-3.3.7-4-1.6-4-1.6c-.6-1.5-1.5-1.9-1.5-1.9c-1.2-.8.1-.8.1-.8c1.3.1 2 1.3 2 1.3c1.1 2 3 1.5 3.7 1.1c.1-.8.4-1.5.8-1.8c-2.6-.3-5.3-1.3-5.3-5.8c0-1.3.5-2.4 1.2-3.3c-.1-.3-.5-1.5.1-3.2c0 0 1-.3 3.3 1.3c1-.3 2-.5 3-.5s2.1.2 3 .5c2.2-1.6 3.3-1.3 3.3-1.3c.6 1.7.2 2.9.1 3.2c.8.9 1.2 2 1.2 3.3c0 4.5-2.7 5.5-5.3 5.8c.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6c4.6-1.5 7.9-5.9 7.9-11c0-6.3-5.2-11.5-11.5-11.5z"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5C3.33 3.5 2 4.82 2 6.48c0 1.65 1.33 2.98 2.98 2.98C6.63 9.46 8 8.13 8 6.48c0-1.66-1.37-2.98-3.02-2.98zM2.4 20.5h5.2V9.85H2.4V20.5zM9.9 9.85v10.65h5.2v-5.62c0-1.5.28-2.94 2.14-2.94s2.03 1.6 2.03 3.06v5.5h5.2v-6.19c0-4.5-2.4-6.6-5.6-6.6-2.47 0-3.56 1.4-4.17 2.4h-.08V9.85H9.9z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://seusite.com" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12c0 5.3 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.39-1.333-1.758-1.333-1.758-1.09-.745.082-.729.082-.729 1.205.085 1.84 1.24 1.84 1.24 1.07 1.832 2.807 1.303 3.492.997.107-.775.42-1.305.763-1.605-2.665-.3-5.466-1.333-5.466-5.93 0-1.31.47-2.38 1.24-3.22-.124-.3-.54-1.51.118-3.14 0 0 1.01-.322 3.3 1.23a11.52 11.52 0 0 1 6 0c2.29-1.552 3.3-1.23 3.3-1.23.66 1.63.244 2.84.12 3.14.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.475 5.922.43.372.823 1.104.823 2.222v3.293c0 .32.217.694.825.576C20.565 21.8 24 17.3 24 12c0-6.628-5.373-12-12-12z"/></svg>
+        Portfólio
+      </a>
     </div>
   </div>
 </body>
