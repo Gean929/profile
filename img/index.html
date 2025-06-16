@@ -3,125 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gean Farley - Portfólio</title>
+  <title>Gean Farley - Página Pessoal</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: linear-gradient(135deg, #0d011b, #1b0036);
-      font-family: 'Inter', sans-serif;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .container {
-      background-color: #1e003080;
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 600px;
-      width: 100%;
-      text-align: center;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-      animation: fadeIn 1s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #c77dff;
-  text-shadow: 0 0 5px #c77dff, 0 0 10px #a855f7;
-}
-h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #e0b3ff;
-  text-shadow: 0 0 4px #a64bf4, 0 0 8px #9d4edd;
-}
-
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-      opacity: 0.95;
-    }
-
-    .email {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-bottom: 20px;
-    }
-
-    .links {
-      margin-top: 25px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .links a {
-      background-color: #7b2cbf;
-      color: #fff;
-      padding: 12px 22px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: all 0.3s ease;
-    }
-
-    .links a:hover {
-      background-color: #5a189a;
-      transform: translateY(-2px);
-    }
-
-    .footer-note {
-      margin-top: 30px;
-      font-size: 0.8rem;
-      color: #bbb;
-      opacity: 0.7;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Olá! Eu sou o Gean Farley</h1>
-    <h2> Fiz está pagina para apresentar alguns projetos que estou fazendo em meu curso de informatica,acesse meu github para ve-los</h2>
-    <p class="email">📧 geanfarley180@email.com</p>
-    <p>💻 Desenvolvedor Web | 🎨 UI/UX Designer</p>
+    <h1>👨‍💻 Gean Farley</h1>
+    <p>Estudante Técnico em Informática, apaixonado por programação e tecnologias web.</p>
+    <p class="email">📫 geanfarley@email.com</p>
 
     <div class="links">
-      <a href="https://github.com/seuusuario" target="_blank">🌐 GitHub</a>
-      <a href="https://discord.com/users/seuID" target="_blank">💬 Discord</a>
-      
+      <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
     </div>
 
-    <p class="footer-note">Clique nos botões acima para conhecer meu trabalho!</p>
+    <div class="skills">
+      <h2>🔧 Tecnologias</h2>
+      <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Git</span>
+      </div>
+    </div>
+
+    <div class="projects">
+      <h2>🧠 Projetos em Destaque</h2>
+      <ul>
+        <li><a href="https://github.com/seuusuario/projeto1" target="_blank">💻 Projeto 1: Portfólio Pessoal</a></li>
+        <li><a href="https://github.com/seuusuario/projeto2" target="_blank">📊 Projeto 2: Dashboard Interativo</a></li>
+        <li><a href="https://github.com/seuusuario/projeto3" target="_blank">⚙️ Projeto 3: Calculadora com JavaScript</a></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
-
