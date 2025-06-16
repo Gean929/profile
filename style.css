@@ -1,111 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    background: linear-gradient(135deg, #1b1f3a, #0f0c29);
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
+body {
+  background: linear-gradient(135deg, #1b1f3a, #0f0c29);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-  .container {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 1.2s ease-out forwards;
+/* 💜 Efeito de brilho roxo */
+.glow-purple {
+  text-shadow: 0 0 5px #a84dff, 0 0 10px #a84dff, 0 0 15px #a84dff;
+}
+
+.container {
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
+    transform: translateY(30px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
 
-  h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    line-height: 1.4;
-  }
+p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
 
-  p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    opacity: 0.9;
-  }
+.email {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
 
-  .email {
-    font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 20px;
-  }
+.links {
+  margin-top: 20px;
+}
 
-  .links {
-    margin-top: 20px;
-  }
+.links a {
+  display: inline-block;
+  margin: 8px;
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s;
+  text-shadow: 0 0 4px #a84dff;
+}
 
-  .links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin: 8px;
-    background-color: #6a0dad;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background 0.3s ease, transform 0.2s;
-  }
+.links a:hover {
+  background-color: #571e9c;
+  transform: translateY(-2px);
+}
 
-  .links a:hover {
-    background-color: #571e9c;
-    transform: translateY(-2px);
-  }
+.skills {
+  margin-top: 30px;
+}
 
-  .links a svg {
-    width: 18px;
-    height: 18px;
-    fill: #fff;
+.skills h2 {
+  font-size: 1.2rem;
+  color: #c2a9ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #a84dff;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tags span {
+  background-color: #2e2059;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  color: #e0cfff;
+  border: 1px solid #7745c4;
+  text-shadow: 0 0 3px #a84dff;
+}
+
+.projects {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.projects h2 {
+  font-size: 1.2rem;
+  color: #c2a9ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #a84dff;
+}
+
+.projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects li {
+  margin-bottom: 8px;
+}
+
+.projects a {
+  color: #a88efb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 3px #a84dff;
+}
+
+.projects a:hover {
+  color: #d3bfff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #6a0dad33 0%, transparent 70%);
+  animation: pulse 6s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
   }
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: radial-gradient(circle at center, #6a0dad33 0%, transparent 70%);
-    animation: pulse 6s infinite;
-    z-index: -1;
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
   }
-  
-  @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-      opacity: 0.4;
-    }
-    50% {
-      transform: scale(1.2);
-      opacity: 0.6;
-    }
-  }
+}
+
   
